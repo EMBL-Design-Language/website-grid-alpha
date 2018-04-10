@@ -6,6 +6,17 @@ For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong gr
 - https://embl-website-grid-alpha.surge.sh
 - https://embl-website-grid-alpha.surge.sh/grid.html
 
+
+## Tools
+
+- Show the grid by adding a parent class of `show-grid`
+
+## Develop with it
+
+- install `npm install`
+- develop locally `gulp`
+- deploy `surge --domain embl-website-grid-alpha.surge.sh .`
+
 ## Technical plumbing
 
 - Content:
@@ -17,4 +28,3 @@ For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong gr
   - travis + surge
 
 ### Deploying
-`surge --domain embl-website-grid-alpha.surge.sh .`
