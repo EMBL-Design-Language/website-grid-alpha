@@ -5,7 +5,6 @@ REPO_OWNER=${REPO_SLUG_ARRAY[0]}
 REPO_NAME=${REPO_SLUG_ARRAY[1]}
 DEPLOY_PATH=.
 
-
 DEPLOY_SUBDOMAIN_UNFORMATTED_LIST=()
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]
 then
@@ -26,13 +25,14 @@ then
   fi
   DEPLOY_SUBDOMAIN_UNFORMATTED_LIST+=(${TRAVIS_TAG}-tag)
 else
-  echo Would deploy branch, but disabled.
-  # DEPLOY_SUBDOMAIN_UNFORMATTED_LIST+=(${TRAVIS_BRANCH}-branch)
+  echo Deploying branch.
+  DEPLOY_SUBDOMAIN_UNFORMATTED_LIST+=(${TRAVIS_BRANCH}-branch)
 fi
 
 
 for DEPLOY_SUBDOMAIN_UNFORMATTED in "${DEPLOY_SUBDOMAIN_UNFORMATTED_LIST[@]}"
 do
+  echo Beginning deplyment to Surge.sh
   echo $DEPLOY_SUBDOMAIN_UNFORMATTED
   # replaces "/" or "." with "-"
   # sed -r is only supported in linux, ref http://stackoverflow.com/a/2871217/689223
