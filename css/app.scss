@@ -22,6 +22,29 @@ p {
   margin: .5rem 0;
 }
 
+.caption {
+  font-family: "Fira Mono"
+}
+
+.white-transparent-background {
+  background: rgba(255,255,255,0.9);
+}
+
+.badge {
+  display: inline-block;
+  min-width: 2.1em;
+  padding: .3em;
+  border-radius: 0;
+  font-size: .9rem;
+  text-align: center;
+  background: $maincolor;
+  color: #111;
+}
+
+.button-grid .inner {
+  padding-top: .5rem;
+}
+
 .main-content-area a:link {
     background: linear-gradient(#fff, #fff),linear-gradient(#fff, #fff),linear-gradient($maincolor, $maincolor);
     background-size: 0.05em 1px, 0.05em 1px, 1px 2px;

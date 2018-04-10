@@ -3,6 +3,8 @@ For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong gr
 
 ## View it
 - https://embl-website-grid-alpha.surge.sh + [Add URL patterns here]
+- https://embl-website-grid-alpha.surge.sh
+- https://embl-website-grid-alpha.surge.sh/grid.html
 
 ## Technical plumbing
 
