@@ -13,7 +13,7 @@ https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
 
 ## Tools
 
-- Show the grid by adding a parent class of `show-grid` to the `body` element.
+- Show the grid by adding a parent class of `show-grid` to a parent element.
 
 ## Develop with it
 
