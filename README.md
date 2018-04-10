@@ -2,10 +2,12 @@
 For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong grid.
 
 ## View it
-- https://embl-website-grid-alpha.surge.sh + [Add URL patterns here]
-- https://embl-website-grid-alpha.surge.sh
-- https://embl-website-grid-alpha.surge.sh/grid.html
 
+Commits and tags are published to Surge.sh through Travis CI; the pattern:
+- Latest commit:
+https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
+- Latest tag: https://latest-website-grid-alpha-embl-design-language.surge.sh
+- Tags (example shown is for v0.0.7):  https://v0-0-7-tag-website-grid-alpha-EMBL-Design-Language.surge.sh
 
 ## Tools
 
