@@ -8,54 +8,74 @@
     and use the compiled CSS version.
 */
 
-// empty
+// Basic styling
+$maincolor: rgb(168,199,0);
+$grid: linear-gradient(90deg, rgba(0,0,0, .05) 0%, transparent .5%, transparent 99%, rgba(0,0,0, .05) 100%),
+linear-gradient(0deg, rgba(0,0,0, .05) 0%, transparent 1%, transparent 95%, rgba(0,0,0, .05) 100%);
 
+h1.intro, .h1.intro {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+p {
+  margin: .5rem 0;
+}
+
+.main-content-area a:link {
+    background: linear-gradient(#fff, #fff),linear-gradient(#fff, #fff),linear-gradient($maincolor, $maincolor);
+    background-size: 0.05em 1px, 0.05em 1px, 1px 2px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #ffffff, -0.03em 0 #ffffff, 0 0.03em #ffffff, 0 -0.03em #ffffff, 0.06em 0 #ffffff, -0.06em 0 #ffffff, 0.09em 0 #ffffff, -0.09em 0 #ffffff, 0.12em 0 #ffffff, -0.12em 0 #ffffff, 0.15em 0 #ffffff, -0.15em 0 #ffffff;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+    // color: $maincolor;
+}
+
+// Grid stuff
 .show-grid .row {
   max-width: 72rem;
   min-width: 72rem;
-  
 }
 .show-grid .columns {
   box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
 
-  background-image:
-    linear-gradient(90deg, rgba(0,0,0, .05) 0%, transparent .5%, transparent 99%, rgba(0,0,0, .05) 100%),
-    linear-gradient(0deg, rgba(0,0,0, .05) 0%, transparent 1%, transparent 95%, rgba(0,0,0, .05) 100%);
+  background-image: $grid;
   height:100%;
-  background-size: 8.4%, 30px; // 72/12
+  background-size: 8.4%, 100px 4ex; // 72/12
   // background-size: (100/12)%, 2rem;
-  //
+
   &.large-11 {
-    background-size: 9.2%, 30px;
+    background-image: $grid;
+    background-size: 9.2%, 100px 4ex;
   }
   &.large-10 {
-    background-size: 10.1%, 30px;
+    background-size: 10.1%, 100px 4ex;
   }
   &.large-9 {
-    background-size: 11.2%, 30px;
+    background-size: 11.2%, 100px 4ex;
   }
   &.large-8 {
-    background-size: 12.6%, 30px;
+    background-size: 12.6%, 100px 4ex;
   }
   &.large-7 {
-    background-size: 14.4%, 30px;
+    background-size: 14.4%, 100px 4ex;
   }
   &.large-6 {
-    background-size: 16.8%, 30px;
+    background-size: 16.8%, 100px 4ex;
   }
   &.large-5 {
-    background-size: 20.1%, 30px;
+    background-size: 20.1%, 100px 4ex;
   }
   &.large-4 {
-    background-size: 25.2%, 30px;
+    background-size: 25.2%, 100px 4ex;
   }
   &.large-3 {
-    background-size: 33.333%, 30px;
+    background-size: 33.333%, 100px 4ex;
   }
   &.large-2 {
-    background-size: 50%, 30px;
+    background-size: 50%, 100px 4ex;
   }
   &.large-1 {
-    background-size: 100%, 30px;
+    background-size: 100%, 100px 4ex;
   }
 }
