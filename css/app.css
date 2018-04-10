@@ -32,6 +32,12 @@ p {
 .button-grid .inner {
   padding-top: .5rem; }
 
+.global-navigation {
+  line-height: 3.5rem;
+  font-family: "Fira Mono";
+  padding-bottom: 1.9rem;
+  font-size: .9rem; }
+
 .main-content-area a:link {
   background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#a8c700, #a8c700);
   background-size: 0.05em 1px, 0.05em 1px, 1px 2px;
