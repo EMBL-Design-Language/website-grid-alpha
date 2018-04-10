@@ -1,6 +1,8 @@
 # website-grid-alpha
 For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong grid.
 
+This uses a 12-column grid of up to 72 rem in width. 12 columns are used as this is a very strong web convention, 9 columns is technically easy but would impose a large technical burden on ongoing work and translating existing sites.
+
 ## View it
 
 Commits and tags are published to Surge.sh through Travis CI; the pattern:
@@ -11,13 +13,20 @@ https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
 
 ## Tools
 
-- Show the grid by adding a parent class of `show-grid`
+- Show the grid by adding a parent class of `show-grid` to the `body` element.
 
 ## Develop with it
 
-- install `npm install`
-- develop locally `gulp`
-- deploy `surge --domain embl-website-grid-alpha.surge.sh .`
+- Setup
+  - `npm install`
+- Layout:
+  - edit `index.html`
+- Style:
+  - edit `css/app.scss`
+  - `gulp sass`
+- Deploy:
+  - commits and tags are automatically deployed:
+  - manual: `surge --domain embl-website-grid-alpha.surge.sh .`
 
 ## Technical plumbing
 
