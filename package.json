@@ -4,7 +4,7 @@
   "description": "For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong grid.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
