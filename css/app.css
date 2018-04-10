@@ -45,9 +45,11 @@ p {
   text-shadow: 0.03em 0 #ffffff, -0.03em 0 #ffffff, 0 0.03em #ffffff, 0 -0.03em #ffffff, 0.06em 0 #ffffff, -0.06em 0 #ffffff, 0.09em 0 #ffffff, -0.09em 0 #ffffff, 0.12em 0 #ffffff, -0.12em 0 #ffffff, 0.15em 0 #ffffff, -0.15em 0 #ffffff;
   background-position: 0% 93%, 100% 93%, 0% 93%; }
 
-.show-grid .row {
-  max-width: 72rem;
-  min-width: 72rem; }
+.gray-box {
+  background: #CCC;
+  border: 0.5px solid rgba(255, 255, 255, 0.5); }
+  .gray-box > p {
+    padding: 1rem; }
 
 .show-grid .columns {
   box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;

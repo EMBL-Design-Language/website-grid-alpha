@@ -61,11 +61,16 @@ p {
     // color: $maincolor;
 }
 
-// Grid stuff
-.show-grid .row {
-  max-width: 72rem;
-  min-width: 72rem;
+.gray-box {
+  background: #CCC;
+  border: 0.5px solid rgba(255,255,255,.5);
+  > p {
+    padding: 1rem;
+
+  }
 }
+
+// Grid stuff
 .show-grid .columns {
   box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
 
