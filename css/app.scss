@@ -45,10 +45,58 @@ p {
   padding-top: .5rem;
 }
 
+.global-masthead {
+  background: $maincolor;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.5s;
+
+  .embl-logo {
+    margin-left: 1rem;
+    border-left: 1px solid #111;
+    height: 35px;
+    width: 95px;
+    display: inline-block;
+    background: url('https://embl-design-language.github.io/Framework-for-Websites/assets/logos/EMBL-mono-black.svg') no-repeat right;
+    position: relative;
+    top: 12px;
+  }
+
+  .what {
+    &:before {
+      content: "> ";
+    }
+    transition-property: opacity, left, top, height;
+    transition-duration: 0.5s;
+    opacity: 0;
+  }
+  &.is-stuck {
+    background: #000;
+    color: $maincolor;
+
+    .embl-logo {
+      background: url('https://embl-design-language.github.io/Framework-for-Websites/assets/logos/EMBL-mono-white.svg') no-repeat right;
+    }
+
+
+    a {
+      color: $maincolor;
+
+    }
+
+    .embl-logo {
+      border-left: 1px solid $maincolor;
+    }
+
+    .what {
+      opacity: 1;
+    }
+  }
+}
+
 .global-navigation {
   line-height: 3.5rem;
   font-family: "Fira Mono";
-  padding-bottom: 1.9rem;
+  padding-bottom: 0.3rem;
   font-size: .9rem;
 }
 
