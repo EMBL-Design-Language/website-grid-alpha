@@ -15,4 +15,4 @@ For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong gr
   - travis + surge
 
 ### Deploying
-`surge --domain embl-website-grid-alpha.surge.sh`
+`surge --domain embl-website-grid-alpha.surge.sh .`
