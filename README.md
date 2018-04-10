@@ -22,7 +22,8 @@ https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
   - simple static html
 - Styling:
   - uses the draft [EMBL-Design-Language/Framework-for-Websites](https://github.com/EMBL-Design-Language/Framework-for-Websites)
-  - local overrides `css/app.css`
+  - sass for styles
+  - local overrides `css/app.scss`
 - Deployment
   - travis + surge
 
