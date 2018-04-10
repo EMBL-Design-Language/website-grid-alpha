@@ -6,6 +6,7 @@ This uses a 12-column grid of up to 72 rem in width. 12 columns are used as this
 ## View it
 
 Commits and tags are published to Surge.sh through Travis CI; the pattern:
+
 - Latest commit:
 https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
 - Latest tag: https://latest-website-grid-alpha-embl-design-language.surge.sh
@@ -14,6 +15,16 @@ https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
 ## Tools
 
 - Show the grid by adding a parent class of `show-grid` to a parent element.
+
+## Technical plumbing
+
+- Content:
+  - simple static html
+- Styling:
+  - uses the draft [EMBL-Design-Language/Framework-for-Websites](https://github.com/EMBL-Design-Language/Framework-for-Websites)
+  - local overrides `css/app.css`
+- Deployment
+  - travis + surge
 
 ## Develop with it
 
@@ -27,15 +38,3 @@ https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
 - Deploy:
   - commits and tags are automatically deployed:
   - manual: `surge --domain embl-website-grid-alpha.surge.sh .`
-
-## Technical plumbing
-
-- Content:
-  - simple static html
-- Styling:
-  - uses the draft [EMBL-Design-Language/Framework-for-Websites](https://github.com/EMBL-Design-Language/Framework-for-Websites)
-  - local overrides `css/app.css`
-- Deployment
-  - travis + surge
-
-### Deploying
