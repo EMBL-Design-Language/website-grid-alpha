@@ -6,10 +6,34 @@
   If you don't care about Sass, delete this block and the ebi-global.scss file
     and use the compiled CSS version.
 */
-.show-grid .columns {
-  box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd; }
+.show-grid .row {
+  max-width: 72rem;
+  min-width: 72rem; }
 
-.row {
+.show-grid .columns {
+  box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, transparent 0.5%, transparent 99%, rgba(0, 0, 0, 0.05) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, transparent 1%, transparent 95%, rgba(0, 0, 0, 0.05) 100%);
   height: 100%;
-  background-size: 8.3333%, 2rem; }
+  background-size: 8.4%, 30px; }
+  .show-grid .columns.large-11 {
+    background-size: 9.2%, 30px; }
+  .show-grid .columns.large-10 {
+    background-size: 10.1%, 30px; }
+  .show-grid .columns.large-9 {
+    background-size: 11.2%, 30px; }
+  .show-grid .columns.large-8 {
+    background-size: 12.6%, 30px; }
+  .show-grid .columns.large-7 {
+    background-size: 14.4%, 30px; }
+  .show-grid .columns.large-6 {
+    background-size: 16.8%, 30px; }
+  .show-grid .columns.large-5 {
+    background-size: 20.1%, 30px; }
+  .show-grid .columns.large-4 {
+    background-size: 25.2%, 30px; }
+  .show-grid .columns.large-3 {
+    background-size: 33.333%, 30px; }
+  .show-grid .columns.large-2 {
+    background-size: 50%, 30px; }
+  .show-grid .columns.large-1 {
+    background-size: 100%, 30px; }
