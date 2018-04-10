@@ -1,0 +1,9 @@
+# https://medium.com/onfido-tech/travis-surge-github-auto-deploy-every-pr-branch-and-tag-a6c8c790831f
+language: node_js
+node_js:
+  - 5
+os:
+  - linux
+after_success:
+  - chmod ugo+x ./deploy.sh
+  - ./deploy.sh
