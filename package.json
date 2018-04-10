@@ -1,0 +1,19 @@
+{
+  "name": "website-grid-alpha",
+  "version": "1.0.0",
+  "description": "For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong grid.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EMBL-Design-Language/website-grid-alpha.git"
+  },
+  "author": "Ken Hawkins",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/EMBL-Design-Language/website-grid-alpha/issues"
+  },
+  "homepage": "https://github.com/EMBL-Design-Language/website-grid-alpha#readme"
+}
