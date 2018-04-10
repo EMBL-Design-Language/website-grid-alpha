@@ -13,3 +13,6 @@ For CD-Sprint-4, a conceptual take on an EMBL corporate webpage with a strong gr
   - local overrides `css/app.css`
 - Deployment
   - travis + surge
+
+### Deploying
+`surge --domain embl-website-grid-alpha.surge.sh`

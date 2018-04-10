@@ -1,0 +1,8 @@
+.git
+.*
+*.*~
+node_modules
+bower_components
+README.md
+pacakge.json
+LICENSE
