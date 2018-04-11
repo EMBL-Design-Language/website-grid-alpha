@@ -16,8 +16,9 @@
         <div class="grid-container">
           <div class="row global-navigation">
             <div class="large-3 columns">
-              <span class="where"><a href="https://embl.de">Heidelberg</a></span>
-              <span class="what"><a href="#">Training</a></span>
+              <span class="where"><a href="https://www.ebi.ac.uk">EMBL-EBI</a></span>
+              <span class="what"><a href="#">Service</a></span>
+              <!-- <span class="who"><a href="#">Clustural test</a></span> -->
             </div>
             <div class="large-9 columns text-right">Research Services Training Jobs About Us  <i class="icon icon-common icon-search"></i>
               <a href="#" class="embl-logo"></a>
@@ -27,242 +28,117 @@
       </div>
     </div>
 
+    <div class="local-header">
+      <div class="grid-container">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1 class="margin-left-small intro">Clustal Test</h1>
+            <p class="margin-left-medium lead">Sample showing how the EMBL look could be exposed on a <a href="#">very "rational" site</a>.</p>
+
+            <p class="margin-left-medium">
+            Clustal Omega is a new multiple sequence alignment program that uses seeded guide trees and HMM profile-profile techniques to generate alignments between three or more sequences. For the alignment of two sequences please instead use our pairwise sequence alignment tools. </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="grid-container">
       <div class="main-content-area" id="main-content-area">
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h1 class="margin-left-small intro">Training</h1>
-            <p class="margin-left-medium lead">Sample showing the header for the  <a href="#">EMBL training section</a>.</p>
 
-            <p class="margin-left-medium">
-              This is a rough concept that illustrates that:
-              <ol class="padding-left-small">
-                <li>That a structured "box" layout is plausable.
-                <li>A plausable hirearchy that echoes the print design: EMBL > site (who) > activity (what)
-                <li>How structure can be maintained as the user scrolls
-                <li>Role of colour and poteintal contrast issues
-              </ol>
-            </p>
+        <div class="row show-grid-x">
+          <div class="large-9 columns">
 
-          </div>
-        </div>
-
-        <div class="row show-grid">
-          <div class="large-12 columns">
-            <div class="row">
-              <div class="columns margin-top-xlarge margin-bottom-large">
-                <h2 class="margin-top-medium">Training goals</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row large-collapse">
-          <div class="large-3 columns">
-            <div style="background-image: url(images/cells.jpg);background-size: cover; min-height: 30rem;background-repeat: no-repeat;">
-            </div>
-          </div>
-          <div class="large-6 columns">
-            <div class="row medium-up-2 large-collapse">
-              <div class="gray-box columns" style="min-height: 15rem;"><p>Content here</p></div>
-              <div class="gray-box columns" style="min-height: 15rem;"><p>Content here</p></div>
-              <div class="gray-box columns" style="min-height: 15rem;"><p>Content here</p></div>
-              <div class="gray-box columns" style="min-height: 15rem;"><p>Content here</p></div>
-            </div>
-          </div>
-          <div class="large-3 columns">
-            <div class="row  large-collapse">
-              <div class="gray-box columns" style="min-height: 30rem;"><p>Inspiring and educating about the complexity and beauty of life</p></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row padding-top-xlarge show-grid">
-          <div class="large-12 columns"
-            style="background-image: url(images/cells.jpg);background-size: contain;min-height: 41rem;background-repeat: no-repeat;"
-          >
-            <div class="row">
-              <div class="columns margin-top-xlarge margin-bottom-large">
-                <h2 class="white-color large-push-1 margin-top-medium">Agenda</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-up-5 large-push-1 large-10 button-grid" data-equalizer data-equalize-on="large" id="test-eq">
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">1</span>
-                    <p>What is EMBL?</p>
+            <div id="use">
+                   <form action="../../services/web_clustalo/toolform.ebi" enctype="multipart/form-data" id="jd_toolSubmissionForm" method="post">
+                    <input id="tool" name="tool" type="hidden" value="clustalo">
+                    <div class="jd_toolParameterBox">
+                     <fieldset>
+                      <legend>STEP 1 - Enter your input sequences</legend>
+                      <p> <label for="sequence"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-sequence" target="_help">Enter or paste</a> </label> a set of <select id="stype" name="stype"> <option value="protein">PROTEIN</option> <option value="dna">DNA</option> <option value="rna">RNA</option> </select> sequences in any supported <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-sequence" target="_help">format</a>: </p>
+                      <textarea cols="47" id="sequence" name="sequence" rows="7"></textarea>
+                      <p> Or, <label for="upfile"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-upload" target="_help">upload</a> </label> a file: <input id="upfile" name="upfile" type="file"> </p>
+                     </fieldset>
+                    </div>
+                    <div class="jd_toolParameterBox">
+                     <fieldset>
+                      <legend>STEP 2 - Set your parameters</legend>
+                      <div class="jd_singleLineParameter">
+                       <label for="outfmt"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-outfmt" target="_help">OUTPUT FORMAT</a> </label>
+                       <div>
+                        <select id="outfmt" name="outfmt"> <option selected="selected" value="clustal_num">ClustalW with character counts</option> <option value="clustal">ClustalW</option> <option value="fa">Pearson/FASTA</option> <option value="msf">MSF</option> <option value="nexus">NEXUS</option> <option value="phylip">PHYLIP</option> <option value="selex">SELEX</option> <option value="stockholm">STOCKHOLM</option> <option value="vienna">VIENNA</option> </select>
+                       </div>
+                      </div>
+                      <ul class="jd_parameterGroup collapsed" style="display: none;">
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="dealign"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-dealign" target="_help">DEALIGN INPUT SEQUENCES</a> </label>
+                        <div>
+                         <select id="dealign" name="dealign"> <option selected="selected" value="false">no</option> <option value="true">yes</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="mbed"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-mbed" target="_help">MBED-LIKE CLUSTERING GUIDE-TREE</a> </label>
+                        <div>
+                         <select id="mbed" name="mbed"> <option selected="selected" value="true">yes</option> <option value="false">no</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 24.9%;"> <label for="mbediteration"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-mbediteration" target="_help">MBED-LIKE CLUSTERING ITERATION</a> </label>
+                        <div>
+                         <select id="mbediteration" name="mbediteration"> <option selected="selected" value="true">yes</option> <option value="false">no</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="iterations"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-iterations" target="_help">NUMBER of COMBINED ITERATIONS</a> </label>
+                        <div>
+                         <select id="iterations" name="iterations"> <option selected="selected" value="0">default(0)</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="gtiterations"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-gtiterations" target="_help">MAX GUIDE TREE ITERATIONS</a> </label>
+                        <div>
+                         <select id="gtiterations" name="gtiterations"> <option selected="selected" value="-1">default</option> <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="hmmiterations"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-hmmiterations" target="_help">MAX HMM ITERATIONS</a> </label>
+                        <div>
+                         <select id="hmmiterations" name="hmmiterations"> <option selected="selected" value="-1">default</option> <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> </select>
+                        </div> </li>
+                       <li class="jd_parameterCell" style="width: 25%;"> <label for="order"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-order" target="_help">ORDER</a> </label>
+                        <div>
+                         <select id="order" name="order"> <option selected="selected" value="aligned">aligned</option> <option value="input">input</option> </select>
+                        </div> </li>
+                      </ul><p style="float: left; width: 100%;"><span style="width: 100%; float: left; font-style: italic; margin-bottom: 5px;">The default settings will fulfill the needs of most users.</span><a class="jd_button shadow" style="float: left;">More options...</a><span style="float: left; padding: 5px 10px; font-style: italic;">(Click here, if you want to view or change the default settings.)</span></p>
+                     </fieldset>
+                    </div>
+                    <div class="jd_toolParameterBox">
+                     <fieldset>
+                      <legend>STEP 3 - Submit your job</legend>
+                      <div>
+                       <label> <input class="checkbox" id="notification" name="notification" type="checkbox">Be notified by email</label>
+                       <em>(Tick this box if you want to be notified by email when the results are available)</em>
+                      </div>
+                      <div id="submission" style="display: none;">
+                       <div class="line">
+                        <label for="email"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-email" target="_help">EMAIL:</a> </label>
+                        <input class="textfield" id="email" name="email" size="15" type="text" value="">
+                       </div>
+                       <div class="line">
+                        <label for="title"> <a href="https://www.ebi.ac.uk/seqdb/confluence/display/THD/Clustal+Omega#ClustalOmega-title" target="_help">TITLE:</a> </label>
+                        <input class="textfield" id="title" name="title" type="text" value="">
+                        <em>If available, the title will be included in the subject of the notification email and can be used as a way to identify your analysis</em>
+                       </div>
+                      </div>
+                      <div id="jd_submitButtonPanel">
+                       <input name="submit" type="submit" value="Submit" class="button">
+                      </div>
+                     </fieldset>
+                    </div>
+                   </form>
+                   <div class="center">
+                    <p> If you plan to use these services during a course please <a href="http://www.ebi.ac.uk/support/sequence-alignment">contact us</a>. </p>
+                    <p class="ebi_warning"> Please read the FAQ before seeking help from our support staff. </p>
+                   </div>
                   </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">2</span>
-                    <p>Research</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Services</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Training</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="x-white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="x-white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Technology development and transfer</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column margin-bottom-large" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Integration of European life sciences</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Working at EMBL</p>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="white-transparent-background inner column" data-equalizer-watch>
-                    <span class="badge">#</span>
-                    <p>Institutional information</p>
-                  </div>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
-
-        <div class="show-grid">
-          <div class="row">
-            <div class="large-1 columns">
-              <p>1 column</p>
-            </div>
-            <div class="large-2 columns">
-              <p>2 columns</p>
-            </div>
-            <div class="large-3 columns">
-              <p>3 columns</p>
-            </div>
-            <div class="large-4 columns">
-              <p>4 columns</p>
-            </div>
           </div>
 
-          <div class="row">
-            <div class="large-5 columns">
-              <p>5 columns</p>
+          <div class="columns medium-3">
+            <div class="callout">
+              <h5 class="downtime-title">Service Retirement</h5>
+              <p class="downtime-message"><span class="downtime-note"></span>We remind you that it is not long until the EBI's <a href="https://www.ebi.ac.uk/Tools/psa/wise2dba/" target="_blank">Wise2DBA</a> and <a href="https://www.ebi.ac.uk/Tools/psa/promoterwise/" target="_blank">Promoterwise</a> services are retired on 15th April 2018. Alternatives can be found at <a href="https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate" target="_blank">Exonerate</a>, <a href="http://bio-bwa.sourceforge.net" target="_blank">BWA</a> or <a href="http://genome.ucsc.edu/FAQ/FAQblat" target="_blank">BLAT</a>. If you have any concerns, please contact us via <a href="https://www.ebi.ac.uk/support/sequence-alignment" target="_blank">support</a>.</p>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="large-6 columns">
-              <p>6 columns</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-7 columns">
-              <p>7 columns</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-8 columns">
-              <p>8 columns</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-9 columns">
-              <p>9 columns</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-10 columns">
-              <p>10 columns</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-11 columns">
-              <p>11 columns</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="large-12 columns">
-
-            <p class="">This file is a contact sheet to see the very basics of the EMBL Design Language framework, for full guidance on using it, <a class="readmore" href="https://embl-design-language.github.io/Springboard/">head to the Springboard</a></p>
-
-            <p>Here is a readout of some basic styles:</p>
-
-            <hr/>
-
-            <h1 class="intro">A huge 'h1.intro' header.</h1>
-            <h1>h1. This is a very large header.</h1>
-            <h2>h2. This is a large header.</h2>
-            <h3>h3. This is a medium header.</h3>
-            <h4>h4. This is a moderate header.</h4>
-            <h5>h5. This is a small header.</h5>
-            <h6>h6. This is a tiny header.</h6>
-
-
-            <ul>
-              <li>List item with a much longer description or more content.</li>
-              <li>List item
-                <ul>
-                  <li>Nested list item</li>
-                  <li>Nested list item</li>
-                  <li>Nested list item</li>
-                </ul>
-              </li>
-              <li>List item</li>
-              <li>List item</li>
-            </ul>
-
-            <ol>
-              <li>Cheese (essential)</li>
-                <ol>
-                  <li>Normal bacon</li>
-                  <li>Canadian bacon</li>
-                </ol>
-              </li>
-              <li>Mushrooms</li>
-            </ol>
-
-            <dl>
-              <dt>Time</dt>
-              <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
-              <dt>Space</dt>
-              <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
-              <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
-            </dl>
-
-            <blockquote>
-              Those people who think they know everything are a great annoyance to those of us who do.
-              <cite>Isaac Asimov</cite>
-            </blockquote>
           </div>
         </div>
       </div>
