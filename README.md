@@ -8,7 +8,7 @@ This uses a 12-column grid of up to 72 rem in width. 12 columns are used as this
 Commits and tags are published to Surge.sh through Travis CI; the pattern:
 
 - Latest commit:
-https://master-branch-website-grid-alpha-embl-design-language.surge.sh/
+https://rational-v0-0-2-tag-website-grid-alpha-embl-design-language.surge.sh/
 - Latest tag: https://latest-website-grid-alpha-embl-design-language.surge.sh
 - Tags (example shown is for v0.0.7):  https://v0-0-7-tag-website-grid-alpha-EMBL-Design-Language.surge.sh
 
